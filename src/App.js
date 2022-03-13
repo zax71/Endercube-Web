@@ -1,8 +1,8 @@
-import './App.css';
+import './index.css';
 
 function App() {
   return (
-    <h1 className="text-green-300">Title</h1>
+    <h1 className="text-green-300 text-5xl">Title</h1>
   );
 }
 
