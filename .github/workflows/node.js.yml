@@ -39,13 +39,7 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
-      
-      - name: Upload build to hosting environment
-        uses: Atyn/Simple-SFTP@0.0.2
-        with:
-          url: sftp://${{ secrets.SFTP_USERNAME }}:${{ secrets.SFTP_PASSWORD }}@${{ secrets.SFTP_HOST }}/public/dev
-          local-directory: build
-        
+
       - name: SFTP upload  
         uses: AbleLincoln/push-to-sftp@v1.0
         with:
