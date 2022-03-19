@@ -51,7 +51,7 @@ jobs:
       #     remoteDir: '/public/dev'
       
       - name: Upload build to hosting environment
-        uses: Atyn/Simple-SFTP
+        uses: Atyn/Simple-SFTP@0.0.2
         with:
           url: sftp://${{ secrets.SFTP_USERNAME }}:${{ secrets.SFTP_PASSWORD }}@${{ secrets.SFTP_HOST }}/public/dev
           local-directory: build
