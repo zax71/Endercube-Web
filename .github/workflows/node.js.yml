@@ -47,6 +47,6 @@ jobs:
           port: 2022
           username: '${{ secrets.SFTP_USERNAME }}'
           password: '${{ secrets.password }}'
-          local-dir: 'build/'
-          server-dir: '/public/dev/'
+          sourceDir: 'build/'
+          targetDir: '/public/dev/'
 
