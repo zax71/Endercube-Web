@@ -40,13 +40,12 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
       
-      - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
-        with:
-          ftp-server: ${{ secrets.SFTP_SERVER }}
-          ftp-username: ${{ secrets.SFTP_USERNAME }}
-          ftp-password: ${{ secrets.SFTP_PASSWORD }}
-          port: 2022
-          local-dir: build/
-          server-dir: public/dev/
+      - name: PterodactylCD
+        uses: Avenze/pterodactyl-actions@v1
+        with: 
+          panel: https://mc.bloom.host/server/eca46f39/
+          api_key: ${{ secrets.PANEL_KEY }}
+          server: ${{ secrets.PANEL_UUID }}
+          path: build/
+          directory: "public/dev"
 
