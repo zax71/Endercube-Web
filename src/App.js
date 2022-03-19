@@ -4,7 +4,7 @@ import Nav from './Nav';
 
 function App() {
   return (
-    <div className='min-h-screen bg-zinc-700'>
+    <div className='min-h-screen bg-gray-5'>
       <Nav />
     </div>
   );
