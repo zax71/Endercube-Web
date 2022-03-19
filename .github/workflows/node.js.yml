@@ -40,13 +40,13 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
 
-      - name: SFTP upload  
-        uses: AbleLincoln/push-to-sftp@v1.0
-        with:
-          host: '${{ secrets.SFTP_HOST }}'
-          port: 2022
-          username: '${{ secrets.SFTP_USERNAME }}'
-          password: '${{ secrets.password }}'
-          sourceDir: './build/'
-          targetDir: './public/dev/'
+      # - name: SFTP upload  
+      #   uses: AbleLincoln/push-to-sftp@v1.0
+      #   with:
+      #     host: '${{ secrets.SFTP_HOST }}'
+      #     port: 2022
+      #     username: '${{ secrets.SFTP_USERNAME }}'
+      #     password: '${{ secrets.password }}'
+      #     sourceDir: './build/'
+      #     targetDir: './public/dev/'
 
