@@ -41,7 +41,7 @@ jobs:
         timeout-minutes: 1
       
       - name: PterodactylCD
-        uses: Avenze/pterodactyl-actions@v1
+        uses: Avenze/pterodactyl-actions
         with: 
           panel: https://mc.bloom.host/server/eca46f39/
           api_key: ${{ secrets.PANEL_KEY }}
