@@ -46,6 +46,7 @@ jobs:
         ftp-server: ${{ secrets.SFTP_SERVER }}
         ftp-username: ${{ secrets.SFTP_USERNAME }}
         ftp-password: ${{ secrets.SFTP_PASSWORD }}
+        port: 2022
         local-dir: build/
         server-dir: public/dev/
 
