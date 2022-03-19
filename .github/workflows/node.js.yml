@@ -40,12 +40,13 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
         timeout-minutes: 1
       
-      - name: PterodactylCD
-        uses: Avenze/pterodactyl-actions/DockerFile
-        with: 
-          panel: https://mc.bloom.host/server/eca46f39/
-          api_key: ${{ secrets.PANEL_KEY }}
-          server: ${{ secrets.PANEL_UUID }}
-          path: build/
-          directory: "public/dev"
+      - name: SFTP uploader
+        uses: wangyucode/sftp-upload-action@v1.1
+        with:
+          host: ${{ secrets.SFTP_HOST }}
+          port: 2022
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          localDir: 'build/'
+          remoteDir: '/public/dev'
 
