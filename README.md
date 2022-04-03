@@ -1,6 +1,6 @@
 # Endercube-Web
 
-This is Endercube's ofical website! created in [ReactJS](https://reactjs.org/) and [TailwindCSS](https://tailwindcss.com/)
+This is Endercube's official website! created in [ReactJS](https://reactjs.org/) and [TailwindCSS](https://tailwindcss.com/)
 
 ## Where is it hosted?
 
