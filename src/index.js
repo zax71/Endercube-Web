@@ -7,8 +7,8 @@ import About from './pages/About.js';
 import Documentation from './pages/Documentation.js';
 import Staff from './pages/Staff.js';
 
-import Nav from './components/Nav';
-import GitHubLink from './components/GitHubLink.js';
+import Nav from './Components/Nav';
+import GitHubLink from './Components/GitHubLink.js';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 ReactDOM.render(
