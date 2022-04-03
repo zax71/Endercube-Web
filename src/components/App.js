@@ -1,5 +1,4 @@
-import './index.css';
-import './Nav'
+import '../index.css';
 import Nav from './Nav';
 import GitHubLink from './GitHubLink';
 

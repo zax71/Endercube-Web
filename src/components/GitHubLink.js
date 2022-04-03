@@ -1,5 +1,5 @@
-import './index.css';
-import GitHub from './images/GitHub.js'
+import '../index.css';
+import GitHub from '../images/GitHub.js'
 
 const openInNewTab = (url) => {
   const newWindow = window.open(url, '_blank', 'noopener,noreferrer')

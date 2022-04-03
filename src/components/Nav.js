@@ -1,7 +1,7 @@
 // Import tailwind
-import './index.css';
+import '../index.css';
 // Image imports
-import EndercubeLogo from './images/EndercubeLogo.png'
+import EndercubeLogo from '../images/EndercubeLogo.png'
 
 
 function Nav() {
