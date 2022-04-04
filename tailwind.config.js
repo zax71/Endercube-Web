@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'webBg': "url('./images/webBg.png')"
+      }
+    },
     colors: {
       'gray-0': '#ffffff',
       'gray-1': '##4a4a4a',
