@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import Home from './Pages/Home.js';
-import About from './Pages/About.js';
-import Documentation from './Pages/Documentation.js';
-import Staff from './Pages/Staff.js';
+import Home from './/Pages/Home.js';
+import About from './/Pages/About.js';
+import Documentation from './/Pages/Documentation.js';
+import Staff from './/Pages/Staff.js';
 
-import Nav from './Components/Nav';
-import GitHubLink from './Components/GitHubLink.js';
+import Nav from './/Components/Nav';
+import GitHubLink from './/Components/GitHubLink.js';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 ReactDOM.render(
