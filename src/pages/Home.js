@@ -1,6 +1,6 @@
 import '../index.css';
 import ECLogoTransparent from '../images/EndercubeLogoTransparent.png'
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
 
 
