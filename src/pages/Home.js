@@ -1,5 +1,6 @@
 import '../index.css';
 import ECLogoTransparent from '../images/EndercubeLogoTransparent.png'
+import webBg from '../images/webBg.png'
 // import { useEffect, useState } from 'react';
 
 
@@ -28,10 +29,11 @@ function App() {
   // }, [])
 
   return (
-      <div className='bg-webBg bg-contain bg-no-repeat h-[0px] w-full mt-6 pt-[26.0416%] border-y-2 border-gray-0 flex justify-center items-center'>
+      <div className='border-y-2 border-gray-0 flex justify-center align-middle relative'>
+        <img src={webBg} alt="" className='' />
         {/* {loading ? <div>Loading...</div> : <div>{server.fetchData.players.online}</div>} */}
-        <p>Player count (placeholder for api call)</p>
-        <img src={ECLogoTransparent} alt="" width="150" height="150" className='border-4 rounded-[25%] border-gray-0 relative bottom-[calc((100vh*0.260416)/2)]'/>
+        {/* <p>Player count (placeholder for api call)</p> */}
+        <img src={ECLogoTransparent} alt="" width="150" height="150" className='border-4 rounded-[25%] border-gray-0 absolute top-[15%]'/>
       </div>
       
   );
