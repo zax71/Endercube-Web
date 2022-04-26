@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(()=> {
-    ReactGa.initialize('G-RQS00S7RKL')
+    ReactGa.initialize('G-VJRFGJ2532')
 
     // Report page view
     ReactGa.pageview('/')
