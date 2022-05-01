@@ -1,23 +1,12 @@
 import '../index.css';
-import ReactGa from 'react-ga'
 
 import ECLogoTransparent from '../images/EndercubeLogoTransparent.png'
 import webBg from '../images/webBg.png'
-import { useEffect } from 'react';
-// import { useEffect, useState } from 'react';
-
-
 
 
 
 function App() {
 
-  useEffect(()=> {
-    ReactGa.initialize('G-VJRFGJ2532')
-
-    // Report page view
-    ReactGa.pageview('/')
-  }, [])
   // API calls
   // // var online = fetch('https://api.mcsrvstat.us/2/mc.endercube.net')
   // // .then(response => response.json())
