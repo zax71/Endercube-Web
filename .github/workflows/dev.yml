@@ -41,6 +41,6 @@ jobs:
         uses: peter-evans/commit-comment@v2
         with:
           body: |
-            **Build completed successfully:** ${{needs.WaitOnCFPages.outputs.success}}
+            **Build completed successfully:** ${{steps.WaitOnCFPages.outputs.success}}
             **Commit URL:** [${{steps.WaitOnCFPages.outputs.url}}](${{steps.WaitOnCFPages.outputs.url}})
             **Branch URL:** [${{steps.WaitOnCFPages.outputs.alias}}](${{steps.WaitOnCFPages.outputs.alias}})
