@@ -27,7 +27,8 @@ jobs:
           name: Endercube-web
           path: build
       
-      - name: WaitOnCFPages
+      - name: Wait On CF Pages
+        id: WaitOnCFPages
         uses: WalshyDev/cf-pages-await@v1
         with:
             accountEmail: ${{ secrets.CF_ACCOUNT_EMAIL  }}
