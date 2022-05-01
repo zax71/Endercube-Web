@@ -42,4 +42,5 @@ jobs:
         with:
           body: |
             **Build completed successfully:** ${{needs.WaitOnCFPages.outputs.success}}
-            **Build URL:** [${{needs.WaitOnCFPages.outputs.url}}](${{needs.WaitOnCFPages.outputs.url}})
+            **Commit URL:** [${{needs.WaitOnCFPages.outputs.url}}](${{needs.WaitOnCFPages.outputs.url}})
+            **Branch URL:** [${{needs.WaitOnCFPages.outputs.alias}}](${{needs.WaitOnCFPages.outputs.alias}})
