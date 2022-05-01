@@ -29,24 +29,13 @@ jobs:
           name: Endercube-web
           path: build
       
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v1.2
+      - name: Await CF Pages
+        uses: WalshyDev/cf-pages-await@v1
         with:
-          publish-dir: 'build'
-          production-branch: main
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        timeout-minutes: 1
-
-      # - name: SFTP upload  
-      #   uses: AbleLincoln/push-to-sftp@v1.0
-      #   with:
-      #     host: '${{ secrets.SFTP_HOST }}'
-      #     port: 2022
-      #     username: '${{ secrets.SFTP_USERNAME }}'
-      #     password: '${{ secrets.password }}'
-      #     sourceDir: './build/'
-      #     targetDir: './public/dev/'
+            accountEmail: ${{ secrets.CF_ACCOUNT_EMAIL  }}
+            apiKey: ${{ secrets.CF_API_KEY  }}
+            accountId: 'c2864ddc1e0cbf6d3c92fbe97d7ff9b8'
+            project: 'endercube-web'
+            # Add this if you want GitHub Deployments (see below)
+            githubToken: ${{ secrets.GITHUB_TOKEN }}
 
