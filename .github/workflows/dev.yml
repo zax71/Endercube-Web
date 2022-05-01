@@ -9,9 +9,9 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     steps:
+
       - uses: actions/checkout@v2
       - name: Run Node.js
         uses: actions/setup-node@v2
@@ -26,7 +26,10 @@ jobs:
         with:
           name: Endercube-web
           path: build
-      
+  comment:
+    runs-on: ubuntu-latest
+    steps:
+    
       - id: WaitOnCFPages
         uses: WalshyDev/cf-pages-await@v1
         with:
