@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       backgroundImage: {
         'webBg': "url('./images/webBg.png')"
+      },
+      fontFamily: {
+        openSans: ['Open Sans', 'sans-serif']
       }
     },
     colors: {
