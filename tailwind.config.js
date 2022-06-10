@@ -23,5 +23,7 @@ module.exports = {
       'gray-6': '#000000',
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-image-rendering')()
+  ],
 }

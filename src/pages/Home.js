@@ -25,7 +25,7 @@ function App() {
   }, [url])
   
   return (
-    <div>
+    <div className='pb-10'>
       <div className='border-y-2 border-gray-0 flex justify-center align-middle relative'> {/*Top banner*/}
         <img src={webBg} alt="" className='' />
         <p className='text-gray-0 font-openSans text-xl absolute top-[15%] left-[20vw]'>Online Players: {product == null ? "Loading" : product.players.online}</p>
@@ -41,13 +41,22 @@ function App() {
 
         <div className='grid grid-cols-2 gap-3'> {/*Features grid container*/}
           <div className='text-gray-0 font-openSans'> {/*Enchanting container*/}
-            <p className='text-lg'>Enchanting has never been more fun! With our over 200 custom enchantments you'll never run out of ideas</p>
+            <img className='rendering-pixelated' src="https://github.com/InventivetalentDev/minecraft-assets/raw/1.19/assets/minecraft/textures/item/enchanted_book.png" alt="Enchanted Book" width={64} height={64}/>
+            <p className='text-lg'>Enchanting has never been more fun! With our over 200 custom enchantments you'll never run out of ideas.</p>
           </div>
+
+          <div></div><div></div> {/*Spacer*/}
+
           <div className='text-gray-0 font-openSans'> {/*Economy container*/}
-            <p className='text-lg'>We have an entirely player based economy so no more hyper-inflation and easy wins. You've got to work for your money</p>
+            <img className='rendering-pixelated float-right' src="https://github.com/InventivetalentDev/minecraft-assets/raw/1.19/assets/minecraft/textures/item/gold_ingot.png" alt="Enchanted Book" width={64} height={64}/>
+            <p className='text-lg float-left'>We have an entirely player based economy so no more hyper-inflation and easy wins. You've got to work for your money.</p>
           </div>
-          <div className='text-gray-0 font-openSans'> {/*Enchanting container*/}
-            <p className='text-lg'>We have multiple game modes alongside survival too! Parkour and Creative to develop your builds</p>
+
+          <div></div><div></div> {/*Spacer*/}
+
+          <div className='text-gray-0 font-openSans'> {/*Other game modes container*/}
+          <img className='rendering-pixelated' src="https://github.com/InventivetalentDev/minecraft-assets/raw/1.19/assets/minecraft/textures/item/golden_boots.png" alt="Enchanted Book" width={64} height={64}/>
+            <p className='text-lg'>There are multiple game modes alongside survival too! Parkour and Creative to develop your builds.</p>
           </div>
         </div>
         
