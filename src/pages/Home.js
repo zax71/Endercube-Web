@@ -26,13 +26,11 @@ function App() {
   
   return (
     <div className='pb-10'>
-      <div className='border-y-2 border-gray-0 flex justify-center align-middle relative'> {/*Top banner*/}
 
+      <div className='border-y-2 border-gray-0 flex justify-center align-middle relative'> {/*Top banner*/}
         <img src={webBg} alt="" className='' />
-        <p className='text-gray-0 font-openSans text-xl absolute top-[15%] left-[20vw]'>Online Players: {product == null ? "Loading" : product.players.online}</p>
-        <img src={ECLogoTransparent} alt="" width="150" height="150" className='border-4 rounded-[25%] border-gray-0 absolute top-[15%]'/>
-          <p className='text-gray-0 font-openSans text-xl absolute top-[15%] right-[20vw] ml-2 px-2 py-1 bg-gray-1 rounded-sm'>Endercube.net</p>
-        
+        <img src={ECLogoTransparent} alt="" width="150" height="150" className='border-4 rounded-[25%] border-gray-0 absolute top-[12%]'/>
+        <p className='absolute top-[calc(12%+150px+1%)] text-gray-0 bg-[#3564ab] border-[#265cad] rounded-sm p-1'>MC.Endercube.net {product == null ? "?" : product.players.online}</p>
       </div>
       
       <div className='mr-auto ml-auto w-[80%] mt-3'> {/*Centered container - everything in here*/}
@@ -52,14 +50,14 @@ function App() {
 
           <div className='text-gray-0 font-openSans'> {/*Economy container*/}
             <img className='rendering-pixelated float-right' src="https://github.com/InventivetalentDev/minecraft-assets/raw/1.19/assets/minecraft/textures/item/gold_ingot.png" alt="Enchanted Book" width={64} height={64}/>
-            <p className='text-lg float-left'>We have an entirely player based economy so no more hyper-inflation and easy wins. You've got to work for your money.</p>
+            <p className='text-lg float-left'>We have an entirely player based economy so no more hyper-inflation and easy wins. You've got to work for your money!</p>
           </div>
 
           <div></div><div></div> {/*Spacer*/}
 
           <div className='text-gray-0 font-openSans'> {/*Other game modes container*/}
           <img className='rendering-pixelated' src="https://github.com/InventivetalentDev/minecraft-assets/raw/1.19/assets/minecraft/textures/item/golden_boots.png" alt="Enchanted Book" width={64} height={64}/>
-            <p className='text-lg'>There are multiple game modes alongside survival too! Parkour and Creative to develop your builds.</p>
+            <p className='text-lg'>There are multiple game modes alongside Survival too! Parkour and Creative to develop your builds.</p>
           </div>
         </div>
         
