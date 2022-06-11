@@ -7,11 +7,15 @@ module.exports = {
     extend: {
       backgroundImage: {
         'webBg': "url('./images/webBg.png')"
+      },
+      fontFamily: {
+        openSans: ['Open Sans', 'sans-serif'],
+        oswald: ['Oswald', 'sans-serif']
       }
     },
     colors: {
       'gray-0': '#ffffff',
-      'gray-1': '##4a4a4a',
+      'gray-1': '#4a4a4a',
       'gray-2': '#363636',
       'gray-3': '#2f2f2f',
       'gray-4': '#212121',
@@ -19,5 +23,7 @@ module.exports = {
       'gray-6': '#000000',
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-image-rendering')()
+  ],
 }

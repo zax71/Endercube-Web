@@ -8,7 +8,7 @@ import Documentation from './pages/Documentation.js';
 import Staff from './pages/Staff.js';
 
 import Nav from './components/Nav';
-import GitHubLink from './components/GitHubLink.js';
+import Footer from './components/footer.js';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 ReactDOM.render(
@@ -22,7 +22,7 @@ ReactDOM.render(
             <Route path="/documentation" element={<Documentation />}/>
             <Route path="/staff" element={<Staff />}/>
           </Routes>
-        <GitHubLink />
+        <Footer />
       </Router>
     </div>
   </React.StrictMode>,
