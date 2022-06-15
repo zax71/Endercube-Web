@@ -5,11 +5,6 @@ import webBg from '../images/webBg.png'
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 
-// var online = fetch('https://api.mcsrvstat.us/2/mc.endercube.net')
-  // .then(response => response.json())
-  // .then(data => console.log(data['players']['online']));
-
-
 function App() {
   const url = 'https://api.mcsrvstat.us/2/mc.endercube.net'
   const [product, setProduct] = useState(null)
