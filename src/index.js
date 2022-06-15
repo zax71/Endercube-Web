@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 
 import Home from './pages/Home.js';
@@ -11,7 +11,8 @@ import Nav from './components/Nav';
 import Footer from './components/footer.js';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <div className='min-h-screen bg-gray-5'>
       <Router>
