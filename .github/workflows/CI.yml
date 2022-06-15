@@ -1,9 +1,10 @@
 # Push actions script
 
-name: Build - Push
+name: Build
 
 on:
   push:
+  pull_request:
 
 jobs:
   build:
@@ -25,6 +26,8 @@ jobs:
           name: Endercube-web
           path: build
   comment:
+    # Check if pull request
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - id: WaitOnCFPages
