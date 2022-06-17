@@ -44,14 +44,14 @@ function App() {
           <div></div><div></div> {/*Spacer*/}
 
           <div className='text-gray-0 font-openSans'> {/*Economy container*/}
-            <img className='rendering-pixelated float-right' src="https://github.com/InventivetalentDev/minecraft-assets/raw/1.19/assets/minecraft/textures/item/gold_ingot.png" alt="Enchanted Book" width={64} height={64}/>
+            <img className='rendering-pixelated float-right' src="https://github.com/InventivetalentDev/minecraft-assets/raw/1.19/assets/minecraft/textures/item/gold_ingot.png" alt="Gold Ingot" width={64} height={64}/>
             <p className='text-lg float-left'>We have an entirely player based economy so no more hyper-inflation and easy wins. You've got to work for your money!</p>
           </div>
 
           <div></div><div></div> {/*Spacer*/}
 
           <div className='text-gray-0 font-openSans'> {/*Other game modes container*/}
-          <img className='rendering-pixelated' src="https://github.com/InventivetalentDev/minecraft-assets/raw/1.19/assets/minecraft/textures/item/golden_boots.png" alt="Enchanted Book" width={64} height={64}/>
+          <img className='rendering-pixelated' src="https://github.com/InventivetalentDev/minecraft-assets/raw/1.19/assets/minecraft/textures/item/golden_boots.png" alt="Golden Boots" width={64} height={64}/>
             <p className='text-lg'>There are multiple game modes alongside Survival too! Parkour and Creative to develop your builds.</p>
           </div>
         </div>
