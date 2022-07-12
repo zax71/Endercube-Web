@@ -27,9 +27,11 @@ jobs:
           path: build
   comment:
     # Check if pull request
-    if: github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && github.actor == "dependabot[bot]"
     runs-on: ubuntu-latest
     steps:
+
+
       - id: WaitOnCFPages
         uses: WalshyDev/cf-pages-await@v1
         with:
