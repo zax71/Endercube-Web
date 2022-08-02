@@ -24,6 +24,7 @@ root.render(
             <Route path="/staff" element={<Staff />}/>
           </Routes>
         <Footer />
+        
       </Router>
     </div>
   </React.StrictMode>,

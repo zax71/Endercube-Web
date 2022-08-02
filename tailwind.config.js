@@ -10,7 +10,8 @@ module.exports = {
       },
       fontFamily: {
         openSans: ['Open Sans', 'sans-serif'],
-        oswald: ['Oswald', 'sans-serif']
+        oswald: ['Oswald', 'sans-serif'],
+        inter: ['Inter', 'sans-serif']
       }
     },
     colors: {
