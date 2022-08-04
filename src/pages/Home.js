@@ -5,6 +5,8 @@ import webBg from '../images/webBg.png'
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 
+ReactGA.initialize("G-VJRFGJ2532");
+
 function App() {
   const url = 'https://api.mcsrvstat.us/2/mc.endercube.net'
   const [product, setProduct] = useState(null)
@@ -15,15 +17,15 @@ function App() {
       .then(response => {
         setProduct(response.data)
       })
-
-      ReactGA.initialize("G-VJRFGJ2532");
-      // Send initial test view
+      
       ReactGA.pageview('test-init-pageview');
-  
-    
+      
   }, [url])
   
   return (
+    
+      
+    
     <div className='pb-10'>
 
       <div className='border-y-2 border-gray-0 flex justify-center align-middle relative'> {/*Top banner*/}
