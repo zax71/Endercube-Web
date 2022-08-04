@@ -1,5 +1,5 @@
 import '../index.css';
-
+import ReactGA from 'react-ga';
 import ECLogoTransparent from '../images/EndercubeLogoTransparent.png'
 import webBg from '../images/webBg.png'
 import React, { useState, useEffect} from 'react';
@@ -15,6 +15,10 @@ function App() {
       .then(response => {
         setProduct(response.data)
       })
+
+      ReactGA.initialize("G-VJRFGJ2532");
+      // Send initial test view
+      ReactGA.pageview('test-init-pageview');
   
     
   }, [url])
