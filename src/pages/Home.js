@@ -3,6 +3,7 @@ import ECLogoTransparent from '../images/EndercubeLogoTransparent.png'
 import webBg from '../images/webBg.png'
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
+import ReactGA from 'react-ga';
 
 
 function App() {
@@ -17,6 +18,14 @@ function App() {
       })
 
   }, [url])
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search + window.location.hash);
+  }, []);
+
+  useEffect(() => {
+      ReactGA.pageview(window.location.pathname + window.location.search + window.location.hash);
+  });
   
   return (
     
