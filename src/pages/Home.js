@@ -1,11 +1,9 @@
 import '../index.css';
-import ReactGA from 'react-ga';
 import ECLogoTransparent from '../images/EndercubeLogoTransparent.png'
 import webBg from '../images/webBg.png'
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
 
-ReactGA.initialize("G-VJRFGJ2532");
 
 function App() {
   const url = 'https://api.mcsrvstat.us/2/mc.endercube.net'
@@ -17,9 +15,7 @@ function App() {
       .then(response => {
         setProduct(response.data)
       })
-      
-      ReactGA.pageview('test-init-pageview');
-      
+
   }, [url])
   
   return (
