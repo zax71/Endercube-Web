@@ -26,7 +26,7 @@ function Staff() {
 
         <div className='grid grid-cols-2 gap-3'> {/*Staff members container*/}
           <div className='text-gray-0 font-openSans'> {/*Zax71 container*/}
-            <StaffMember github="https://github.com/zax71" email="zax71@endercube.net" name="Zax71" discord="Zax71#1557" bio={"HI! I'm Zax71, I do most of the development work here. Including this website! I'm also a hobby programmer with Java, Web development and CircutPython under my belt."}/>
+            <StaffMember github="https://github.com/zax71" email="zax71@endercube.net" name="Zax71" discord="Zax71#1557" bio={"HI! I'm Zax71, I do most of the development work here. Including this website! I'm also a hobby programmer with Java, Web development and CircuitPython under my belt."}/>
           </div>
 
           <div></div><div></div> {/*Spacer*/}
