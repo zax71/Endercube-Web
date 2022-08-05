@@ -20,11 +20,11 @@ function App() {
   }, [url])
 
   useEffect(() => {
-    ReactGA.send(window.location.pathname + window.location.search + window.location.hash);
+    ReactGA.send("Home");
   }, []);
 
   useEffect(() => {
-      ReactGA.send(window.location.pathname + window.location.search + window.location.hash);
+      ReactGA.send("Home1");
   });
   
   return (
