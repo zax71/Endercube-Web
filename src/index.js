@@ -13,7 +13,7 @@ import Nav from './components/Nav';
 import Footer from './components/footer.js';
 
 
-ReactGA.initialize('G-LPEFM3VFQT');
+ReactGA.initialize('G-VJRFGJ2532');
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
