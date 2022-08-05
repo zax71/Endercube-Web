@@ -19,12 +19,13 @@ function App() {
 
   }, [url])
 
+  // First view only
   useEffect(() => {
-    ReactGA.send("Home");
+    ReactGA.send({ hitType: "pageview", page: "/home" });
   }, []);
 
   useEffect(() => {
-      ReactGA.send("Home1");
+    ReactGA.send({ hitType: "pageview", page: "/home" });
   });
   
   return (

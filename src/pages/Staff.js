@@ -1,7 +1,19 @@
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import StaffMember from '../components/StaffMember';
 import '../index.css';
 
 function Staff() {
+
+   // First view only
+   useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: "/staff" });
+  }, []);
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: "/staff" });
+  });
+
   return (
     <div className='pb-10'>
       
