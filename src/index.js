@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 import Home from './pages/Home.js';
 import About from './pages/About.js';
@@ -10,7 +11,7 @@ import Staff from './pages/Staff.js';
 
 import Nav from './components/Nav';
 import Footer from './components/footer.js';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
 
 ReactGA.initialize('G-LPEFM3VFQT');
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -18,7 +19,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div className='min-h-screen bg-gray-5'>
-      <Router>
+    <Router>
         <Nav />
           <Routes>
             <Route path="/" element={<Home />}/>
