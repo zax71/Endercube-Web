@@ -43,7 +43,7 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.8",
+    "autoprefixer": "^10.4.11",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",
     "tailwindcss-image-rendering": "^1.0.2"
